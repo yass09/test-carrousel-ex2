@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <title>Carrousel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerContainer flex-center">
+        <h1 class="headerTitle">Carrousel</h1>
+      </div>
+      <nav class="headerNav" aria-label="Main navigation">
+        <ul class="navList">
+          <li class="navItem">
+            <a class="headerNavLink" href="#caroussel1">Caroussel</a>
+          </li>
+          <li class="navItem">
+            <a class="headerNavLink" href="#caroussel2">Caroussel 2</a>
+          </li>
+          <li class="navItem navItemLast">
+            <a class="headerNavLink" href="#footer">Footer</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mainContainer">
+      <section class="carouselSection" id="caroussel1">
+        <h2 class="carouselTitle">Carrousel - vignette simple</h2>
+
+        <div class="carousel" aria-label="Gallery of items">
+          <button class="carouselBtn carouselPrev" aria-label="Previous">
+            <span class="visually-hidden">Previous</span>
+            &#10094;
+          </button>
+
+          <div class="carouselTrack" role="list">
+            <!-- Repeat card items -->
+            <article class="cardContainer" role="listitem">
+              <img class="cardImage" src="./assets/images/card_img_1.jpg" />
+              <div class="cardBody">
+                <h3 class="cardTitle flex-center">Blue Supergiant Star</h3>
+                <span class="cardCategory">Star</span>
+                <p class="cardText">
+                  A blue supergiant (BSG) is a hot, luminous star, often
+                  referred to as an OB supergiant. They have luminosity class I
+                  and spectral class B9 or earlier
+                </p>
+              </div>
+              <a
+                class="cardFooter"
+                href="https://unsplash.com/s/photos/galactic"
+                >Voir plus</a
+              >
+            </article>
+
+            <article class="cardContainer" role="listitem">
+              <img class="cardImage" src="./assets/images/card_img_2.jpg" />
+              <div class="cardBody">
+                <h3 class="cardTitle flex-center">Milky Way</h3>
+                <span class="cardCategory--orange">Galaxy</span>
+                <p class="cardText">
+                  The Milky Way is the galaxy that contains our Solar System,
+                  with the name describing the galaxy's appearance from Earth
+                </p>
+              </div>
+              <a
+                class="cardFooter"
+                href="https://unsplash.com/s/photos/galactic"
+                >Voir plus</a
+              >
+            </article>
+
+            <article class="cardContainer" role="listitem">
+              <img class="cardImage" src="./assets/images/card_img_3.jpg" />
+              <div class="cardBody">
+                <h3 class="cardTitle flex-center">Supermassive Black Hole</h3>
+                <span class="cardCategory--red">Black hole</span>
+                <p class="cardText">
+                  A supermassive black hole is the largest type of black hole,
+                  with mass on the order of millions to billions of times the
+                  mass of the Sun
+                </p>
+              </div>
+              <a
+                class="cardFooter"
+                href="https://unsplash.com/s/photos/galactic"
+                >Voir plus</a
+              >
+            </article>
+
+            <article class="cardContainer" role="listitem">
+              <img class="cardImage" src="./assets/images/card_img_4.jpg" />
+              <div class="cardBody">
+                <h3 class="cardTitle flex-center">Blue Supergiant Star</h3>
+                <span class="cardCategory--blue">Star</span>
+                <p class="cardText">
+                  A blue supergiant (BSG) is a hot, luminous star, often
+                  referred to as an OB supergiant. They have luminosity class I
+                  and spectral class B9 or earlier
+                </p>
+              </div>
+              <a
+                class="cardFooter"
+                href="https://unsplash.com/s/photos/galactic"
+                >Voir plus</a
+              >
+            </article>
+            <article class="cardContainer" role="listitem">
+              <img class="cardImage" src="./assets/images/card_img_5.jpg" />
+              <div class="cardBody">
+                <h3 class="cardTitle flex-center">Lorem ipsum dolor</h3>
+                <span class="cardCategory--red">Star</span>
+                <p class="cardText">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                  voluptatibus ea dolores repudiandae impedit architecto
+                  provident, fuga exercitationem minus ipsam nihil.
+                </p>
+              </div>
+              <a
+                class="cardFooter"
+                href="https://unsplash.com/s/photos/galactic"
+                >Voir plus</a
+              >
+            </article>
+          </div>
+
+          <button class="carouselBtn carouselNext" aria-label="Next">
+            <span class="visually-hidden">Next</span>
+            &#10095;
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/carousel.js"></script>
+  </body>
+</html>
