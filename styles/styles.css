@@ -161,7 +161,6 @@ body {
 
 .cardContainer:hover {
   scale: calc(1.1);
-  /* position: relative; */
 }
 
 .cardImage {
@@ -271,11 +270,9 @@ body {
 .footerNavList {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 .footerSubContainer--last {
-  margin-left: auto;
   max-width: 30rem;
 }
 
