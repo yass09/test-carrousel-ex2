@@ -113,7 +113,7 @@ body {
 .carouselTitle {
   font-size: 3rem;
   color: #2a3340;
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
 }
 
 .carousel {
@@ -153,11 +153,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: scale 0.2s ease-in-out;
 }
 
 .cardContainer:hover {
   scale: calc(1.1);
-  position: relative;
+  /* position: relative; */
 }
 
 .cardImage {
