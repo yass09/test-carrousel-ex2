@@ -19,14 +19,14 @@
         <h1 class="headerTitle">Carrousel</h1>
       </div>
       <nav class="headerNav" aria-label="Main navigation">
-        <ul class="navList">
-          <li class="navItem">
+        <ul class="headerNavList">
+          <li class="headerNavItem flex-center">
             <a class="headerNavLink" href="#caroussel1">Caroussel</a>
           </li>
-          <li class="navItem">
+          <li class="headerNavItem flex-center">
             <a class="headerNavLink" href="#caroussel2">Caroussel 2</a>
           </li>
-          <li class="navItem navItemLast">
+          <li class="headerNavItem headerNavItemLast flex-center">
             <a class="headerNavLink" href="#footer">Footer</a>
           </li>
         </ul>
@@ -140,6 +140,55 @@
         </div>
       </section>
     </main>
-    <script src="./assets/js/carousel.js"></script>
+    <footer class="footer flex-center" id="footer">
+      <div class="footerContainer">
+        <div class="footerSubContainer">
+          <p class="footerSubtitle">Carousel 1</p>
+          <nav class="footerNav" aria-label="Footer navigation">
+            <ul class="footerNavList">
+              <li class="footerNavItem">
+                <a class="footerNavLink" href="#caroussel1">Carousel link</a>
+              </li>
+              <li class="footerNavItem">
+                <a class="footerNavLink" href="#caroussel1">Carousel link</a>
+              </li>
+              <li class="footerNavItem">
+                <a class="footerNavLink" href="#caroussel1">Carousel link</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footerSubContainer">
+          <p class="footerSubtitle">Carousel 2</p>
+          <nav class="footerNav" aria-label="Footer navigation">
+            <ul class="footerNavList">
+              <li class="footerNavItem">
+                <a class="footerNavLink" href="#caroussel2">Carousel link</a>
+              </li>
+              <li class="footerNavItem">
+                <a class="footerNavLink" href="#caroussel2">Carousel link</a>
+              </li>
+              <li class="footerNavItem">
+                <a class="footerNavLink" href="#caroussel2">Carousel link</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footerSubContainer--last">
+          <p class="footerSubtitle">Lorem ipsum dolor</p>
+          <p class="footerText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            corrupti vero eum facere culpa ut? Laborum odio quaerat dolore,
+            eaque delectus optio cumque ipsa facere placeat. Adipisci modi omnis
+            delectus?
+          </p>
+        </div>
+      </div>
+      <p class="footerCopyright">
+        The Galactic Carousel © 2025. All rights reserved.
+      </p>
+    </footer>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/nav.js"></script>
   </body>
 </html>

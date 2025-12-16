@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: "Amaranth", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   min-height: 100vh;
   height: -webkit-fill-available;
   font-style: normal;
@@ -25,6 +25,7 @@ body {
   align-items: center;
 }
 
+/* Header styles */
 .header {
   width: 100%;
   height: 25rem;
@@ -44,7 +45,6 @@ body {
 .headerContainer {
   width: 100%;
   height: 100%;
-  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
 }
@@ -57,31 +57,42 @@ body {
   align-items: center;
 }
 
-.navList {
+.headerNavList {
   list-style: none;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0;
   display: flex;
-  gap: 2rem;
+  height: 100%;
   width: 100%;
   justify-content: center;
   font-size: 1.3rem;
 }
 
-.navItemLast {
+.headerNavItem {
+  height: 100%;
+  width: fit-content;
+}
+
+.headerNavLink:hover,
+.headerNavLink:focus {
+  background-color: #32304d;
+}
+
+.headerNavLink.active,
+.headerNavLink[aria-current="page"] {
+  background-color: #32304d;
+}
+
+.headerNavItemLast {
   margin-left: auto;
 }
 
 .headerNavLink {
   color: #ffffff;
   text-decoration: none;
-  display: inline-block;
-}
-
-.headerNavLink:hover,
-.headerNavLink:focus {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 1.5rem;
 }
 
 .mainContainer {
@@ -235,7 +246,59 @@ body {
   margin: -1px;
 }
 
-/* Responsive */
+/* Footer styles */
+.footer {
+  width: 100%;
+  background-color: #2a2b30;
+  color: #9ca0a5;
+  padding: 4rem;
+  flex-direction: column;
+}
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.footerSubContainer,
+.footerNavList {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footerSubContainer--last {
+  margin-left: auto;
+  max-width: 30rem;
+}
+
+.footerSubtitle {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.footerText {
+  text-wrap: wrap;
+}
+
+.footerNavItem {
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.footerNavLink {
+  color: #9ca0a5;
+}
+
+.footerCopyright {
+  color: #606366;
+}
+
+/* Responsive styles */
 @media (max-width: 800px) {
   .cardContainer {
     min-width: 50%;
