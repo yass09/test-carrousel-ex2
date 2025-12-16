@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return parseFloat(gap);
   }
 
-  // Amount to scroll for one card step (card width + gap)
+  // Amount to scroll for one card step
   function getScrollAmount() {
     const cardW = cards[0].offsetWidth;
     return Math.round(cardW + getGapPx());
@@ -30,9 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Enable/disable prev/next buttons based on current scroll position
   function updateButtons() {
-    // disable prev when at or before the inset start
     prevBtn.disabled = track.scrollLeft <= 0;
-    // disable next when we've scrolled to (or beyond) the max
     nextBtn.disabled =
       Math.ceil(track.scrollLeft + track.clientWidth) >= track.scrollWidth;
   }
@@ -51,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.requestAnimationFrame(updateButtons);
   });
 
-  // keyboard support when track is focused: arrow keys move one card
+  // Keyboard support when track is focused: arrow keys move one card
   track.tabIndex = 0;
   track.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight") {
@@ -63,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Update button enabled/disabled on resize
   let resizeTimeout;
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimeout);
