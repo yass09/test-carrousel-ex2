@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Sticky header nav behavior
+  const headerNav = document.querySelector(".headerNav");
+  window.addEventListener("scroll", (e) => {
+    e.preventDefault();
+
+    if (window.scrollY < 210) {
+      headerNav.style.top = 210 - window.scrollY + "px";
+    }
+    if (window.scrollY > 210) {
+      headerNav.style.top = "0px";
+    }
+    if (window.scrollY === 0) {
+      headerNav.style.top = "21rem";
+    }
+  });
+
+  // Active link management
   const links = Array.from(document.querySelectorAll(".headerNavLink"));
   if (!links.length) return;
 
